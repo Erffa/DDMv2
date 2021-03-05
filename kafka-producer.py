@@ -9,7 +9,7 @@ producer = KafkaProducer(
 print("kafka producer : connection success")
 
 cap = cv2.VideoCapture('http://10.4.108.33/mjpg/video.mjpg')
-print(f"video-capture is opened : {cap.isOpened()}")
+print("video-capture is opened : " + str(cap.isOpened()))
 
 while(cap.isOpened()):
     print("loop start")
